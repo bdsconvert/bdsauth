@@ -16,7 +16,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Terms</a></li>
-                <li><a href="#">SignOn</a></li>
+                <li><a href="#" class="modal-trigger" data-target="signon">SignOn</a></li>
               </ul>
             </div>
           </nav>     
@@ -28,6 +28,28 @@
             <li><a href="#">Terms</a></li>
             <li><a href="#">SignOn</a></li>
         </ul>
+                           
+        <div id="signon" class="modal">
+            <div class="modal-content">
+                <h4>Sign On</h4>
+                <form id="signon-form">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+                           
+                           
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script>
             document.addEventListener('DOMContentLoaded', function() {
